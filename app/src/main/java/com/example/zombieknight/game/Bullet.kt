@@ -13,7 +13,7 @@ class Bullet (
     var alive = true
 
     init{
-        showTexture("")
+        showTexture(Assets.image("player/slash.png"))
         flipH = facingLeft
         setTopLeft(center - VEC2(16f, 16f))
         startingX = rectangle.pos.x
@@ -21,7 +21,8 @@ class Bullet (
 
     fun update(){
         rectangle.pos.x += vx
-        if(abs(rectangle.pos.x - startingX) > RANGE) alive = false
+        if(abs(rectangle.pos.x - startingX) > RANGE)
+            alive = false
     }
 
     companion object{

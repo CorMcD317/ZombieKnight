@@ -53,7 +53,7 @@ object Assets {
     private val NOT_A_RESOURCE_CHAR = Regex("[^a-z0-9]+")
 
     fun image(path: String) : Texture {
-        path.removeSuffix(".png").lowercase().replace(NOT_A_RESOURCE_CHAR, "_").trim('_')
+        return path.removeSuffix(".png").lowercase().replace(NOT_A_RESOURCE_CHAR, "_").trim('_')
     }
 
     fun sound(name: String, loop : Boolean = false) : Sound {

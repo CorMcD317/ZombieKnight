@@ -1,7 +1,4 @@
-package com.example.zombieknight.game.Type.*
-
-import com.example.zombieknight.game.Entity
-import com.example.zombieknight.game.VEC2
+package com.example.zombieknight.game
 
 enum class Type {
     EMPTY,
